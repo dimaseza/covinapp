@@ -4,4 +4,7 @@
     <string name="corona_virus_information">Corona Virus Information</string>
     <string name="caption_greetings">Selamat datang di COVIN, COVIN adalah aplikasi yang\nbisa anda gunakan untuk mencari informasi seputar\nSars-Cov 2 atau Covid19. Pada aplikasi ini anda bisa\nmencari informasi seputar rumah sakit terdekat, angka\nterkonfirmasi, hingga berita terkini seputar Covid19\nkhususnya di Indonesia</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
