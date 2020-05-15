@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Covin App</string>
+    <string name="already_app">Mulai Aplikasi</string>
+    <string name="corona_virus_information">Corona Virus Information</string>
+    <string name="caption_greetings">Selamat datang di COVIN, COVIN adalah aplikasi yang\nbisa anda gunakan untuk mencari informasi seputar\nSars-Cov 2 atau Covid19. Pada aplikasi ini anda bisa\nmencari informasi seputar rumah sakit terdekat, angka\nterkonfirmasi, hingga berita terkini seputar Covid19\nkhususnya di Indonesia</string>
+
+</resources>
