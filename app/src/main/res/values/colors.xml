@@ -9,6 +9,10 @@
     <color name="accentColor2">#3282B8</color>
     <color name="accentColor3">#1B262C</color>
     <color name="colorWhite">#FFF</color>
+    <color name="fontColor">#0F4C75</color>
+    <color name="backgroundCase">#2C3C44</color>
+    <color name="fontGreen">#00EA09</color>
+    <color name="fontRed">#CE0101</color>
 
 
 </resources>
