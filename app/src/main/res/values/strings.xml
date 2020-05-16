@@ -12,7 +12,7 @@
     <string name="confirmed_case">Confirmed</string>
     <string name="recovered_case">Recovered</string>
     <string name="deaths_case">Deaths</string>
-    <string name="graph_global">Lihat Grafik Global</string>
+    <string name="graph_global">Grafik Global</string>
     <string name="news_today">Berita Hari Ini</string>
     <string name="more">Lebih Banyak</string>
     <string name="back">Kembali</string>

@@ -40,106 +40,180 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginStart="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="24dp"
-            android:orientation="horizontal"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view">
 
-            <LinearLayout
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="40dp"
-                android:background="@color/backgroundCase"
-                android:gravity="center"
-                android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/confirmed_icon" />
-
-                <TextView
+                <LinearLayout
+                    android:id="@+id/region"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorBlack"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_expand_more"
+                        android:text="Indonesia"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+                <view
+                    android:id="@+id/white_line"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/region" />
+
+                <ImageView
+                    android:id="@+id/img_detected"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/confirmed_icon"
+                    app:layout_constraintEnd_toStartOf="@+id/img_recovered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/white_line" />
+
+
+                <ImageView
+                    android:id="@+id/img_recovered"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/recovered_icon"
+                    app:layout_constraintEnd_toStartOf="@+id/img_dead"
+                    app:layout_constraintStart_toEndOf="@+id/img_detected"
+                    app:layout_constraintTop_toBottomOf="@+id/white_line" />
+
+                <ImageView
+                    android:id="@+id/img_dead"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/deaths_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_recovered"
+                    app:layout_constraintTop_toBottomOf="@+id/white_line" />
+
+                <TextView
+                    android:id="@+id/text_confirmed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
                     android:text="@string/confirmed_case"
                     android:textAlignment="center"
-                    android:textColor="@color/colorWhite" />
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintEnd_toStartOf="@+id/text_recovered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_detected" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/confirm"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="12432"
                     android:textAlignment="center"
-                    android:textColor="@color/colorWhite" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="27dp"
-                android:background="@color/backgroundCase"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/recovered_icon" />
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/recovered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_confirmed" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/text_recovered"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
                     android:text="@string/recovered_case"
                     android:textAlignment="center"
-                    android:textColor="@color/fontGreen" />
+                    android:textColor="@color/fontGreen"
+                    app:layout_constraintEnd_toStartOf="@+id/text_dead"
+                    app:layout_constraintStart_toEndOf="@+id/text_confirmed"
+                    app:layout_constraintTop_toBottomOf="@+id/img_recovered" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/recovered"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="4712"
                     android:textAlignment="center"
-                    android:textColor="@color/fontGreen" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="27dp"
-                android:background="@color/backgroundCase"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/deaths_icon" />
+                    android:textColor="@color/fontGreen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/dead"
+                    app:layout_constraintStart_toEndOf="@+id/confirm"
+                    app:layout_constraintTop_toBottomOf="@+id/text_recovered" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/text_dead"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
                     android:text="@string/deaths_case"
                     android:textAlignment="center"
-                    android:textColor="@color/fontRed" />
+                    android:textColor="@color/fontRed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_recovered"
+                    app:layout_constraintTop_toBottomOf="@+id/img_dead" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/dead"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
                     android:text="12432"
                     android:textAlignment="center"
-                    android:textColor="@color/fontRed" />
-
-            </LinearLayout>
-
-        </LinearLayout>
+                    android:textColor="@color/fontRed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/recovered"
+                    app:layout_constraintTop_toBottomOf="@+id/text_dead" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/textView5"
@@ -150,33 +224,39 @@
             android:fontFamily="@font/roboto"
             android:text="Sumber: blabla.id"
             android:textColor="@color/colorWhite"
-            android:textSize="8sp"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/info" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            app:cornerRadius="16dp"
             android:id="@+id/button2"
-            android:layout_width="167dp"
-            android:layout_height="45dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/btn_get_started"
             android:text="@string/province_website"
-            android:textColor="@color/fontColor"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            app:cornerRadius="16dp"
             android:id="@+id/button3"
-            android:layout_width="167dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/btn_get_started"
             android:text="@string/graph_global"
-            android:textColor="@color/fontColor"
+            android:textColor="@color/colorWhite"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <View
             android:id="@+id/view3"
@@ -205,7 +285,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
-            android:layout_height="49dp"
+            android:layout_height="wrap_content"
+            tools:itemCount="3"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
@@ -213,16 +294,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
+            app:cornerRadius="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/btn_get_started"
             android:text="@string/more"
-            android:textColor="@color/fontColor"
+            android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
