@@ -15,4 +15,9 @@
         android:name="com.daivers.covinapp.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.daivers.covinapp.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
