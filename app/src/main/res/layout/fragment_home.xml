@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 tools:context=".HomeFragment">
 
-                <com.here.sdk.mapview.MapView
+                <com.here.sdk.mapviewlite.MapViewLite
                     android:id="@+id/view"
                     android:layout_width="0dp"
                     android:layout_height="200dp"
