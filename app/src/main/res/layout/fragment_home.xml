@@ -12,8 +12,7 @@
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorBlack">
+        android:layout_height="match_parent">
 
         <include
             android:id="@+id/appBar"
@@ -22,7 +21,6 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E4E4E4"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,8 +28,8 @@
                 android:layout_height="match_parent"
                 tools:context=".HomeFragment">
 
-                <com.here.sdk.mapviewlite.MapViewLite
-                    android:id="@+id/view"
+                <com.here.sdk.mapview.MapView
+                    android:id="@+id/mini_map"
                     android:layout_width="0dp"
                     android:layout_height="200dp"
                     android:layout_marginStart="16dp"
@@ -40,7 +38,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.56"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView4">
+                </com.here.sdk.mapview.MapView>
 
                 <TextView
                     android:id="@+id/textView4"
@@ -67,7 +66,7 @@
                     android:layout_marginEnd="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view">
+                    app:layout_constraintTop_toBottomOf="@+id/mini_map">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
