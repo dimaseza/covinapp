@@ -3,6 +3,9 @@
     package="com.daivers.covinapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +15,10 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.here.sdk.access_key_id" android:value="B3QowHa7Xaks40kqrROBcQ" />
+        <meta-data android:name="com.here.sdk.access_key_secret" android:value="JMuthGEMVocBZM_y-0dVJaqYpDnQkfpWm9taGKxAt0uTVBu49nRSo3WTW81zMUiB7xstEP622ZqIRlXAGjosCg" />
+
         <activity android:name=".GreetingsActivity">
 
         </activity>

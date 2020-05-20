@@ -8,7 +8,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_home">Home</string>
     <string name="title_news">News</string>
-    <string name="province_website">Website Provinsi</string>
+    <string name="province_website">Web Provinsi</string>
     <string name="confirmed_case">Confirmed</string>
     <string name="recovered_case">Recovered</string>
     <string name="deaths_case">Deaths</string>
