@@ -22,7 +22,7 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/gradient_color"
+            android:background="#E4E4E4"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -164,14 +164,14 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="16dp"
-                            tools:text="12432"
-                            app:setTextCase="@{viewModel.caseIndonesia.casePositive}"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/recovered"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/text_confirmed" />
+                            app:layout_constraintTop_toBottomOf="@+id/text_confirmed"
+                            app:setTextCase="@{viewModel.caseIndonesia.casePositive}"
+                            tools:text="12432" />
 
                         <TextView
                             android:id="@+id/text_recovered"
@@ -195,14 +195,14 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="16dp"
-                            tools:text="4712"
                             android:textAlignment="center"
                             android:textColor="@color/fontGreen"
-                            app:setTextCase="@{viewModel.caseIndonesia.caseRevived}"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/dead"
                             app:layout_constraintStart_toEndOf="@+id/confirm"
-                            app:layout_constraintTop_toBottomOf="@+id/text_recovered" />
+                            app:layout_constraintTop_toBottomOf="@+id/text_recovered"
+                            app:setTextCase="@{viewModel.caseIndonesia.caseRevived}"
+                            tools:text="4712" />
 
                         <TextView
                             android:id="@+id/text_dead"
@@ -226,14 +226,14 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="16dp"
-                            app:setTextCase="@{viewModel.caseIndonesia.caseDeath}"
-                            tools:text="12432"
                             android:textAlignment="center"
                             android:textColor="@color/fontRed"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/recovered"
-                            app:layout_constraintTop_toBottomOf="@+id/text_dead" />
+                            app:layout_constraintTop_toBottomOf="@+id/text_dead"
+                            app:setTextCase="@{viewModel.caseIndonesia.caseDeath}"
+                            tools:text="12432" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -245,7 +245,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto"
                     android:text="Sumber: blabla.id"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/info" />
@@ -326,7 +326,7 @@
                     android:layout_marginTop="32dp"
                     android:fontFamily="@font/roboto"
                     android:text="@string/news_today"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/rv_top_news" />
 
@@ -337,13 +337,13 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
+                    android:clipToPadding="false"
                     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6"
                     app:listData="@{viewModel.todayNews}"
                     tools:itemCount="3"
-                    android:clipToPadding="false"
                     tools:listitem="@layout/list_news_item" />
 
                 <ProgressBar
