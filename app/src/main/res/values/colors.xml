@@ -13,6 +13,6 @@
     <color name="backgroundCase">#2C3C44</color>
     <color name="fontGreen">#00EA09</color>
     <color name="fontRed">#CE0101</color>
-
+    <color name="colorBlueLightTheme">#0F2D75</color>
 
 </resources>

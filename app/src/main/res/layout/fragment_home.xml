@@ -72,7 +72,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorBlack">
+                        android:background="@color/colorWhite">
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/region"
@@ -86,7 +86,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@color/colorBlack"
+                                android:background="@color/colorWhite"
                                 android:padding="8dp">
 
                                 <TextView
@@ -94,7 +94,7 @@
                                     android:layout_height="wrap_content"
                                     android:drawableEnd="@drawable/ic_expand_more"
                                     android:text="Indonesia"
-                                    android:textColor="@color/colorWhite" />
+                                    android:textColor="@color/colorBlueLightTheme" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -118,7 +118,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
-                            android:src="@drawable/confirmed_icon"
+                            android:src="@drawable/confirmed_icon_blue"
                             app:layout_constraintEnd_toStartOf="@+id/img_recovered"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/white_line" />
@@ -157,7 +157,7 @@
                             android:layout_marginEnd="16dp"
                             android:text="@string/confirmed_case"
                             android:textAlignment="center"
-                            android:textColor="@color/colorWhite"
+                            android:textColor="@color/colorBlueLightTheme"
                             app:layout_constraintEnd_toStartOf="@+id/text_recovered"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/img_detected" />
@@ -171,7 +171,7 @@
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="16dp"
                             android:textAlignment="center"
-                            android:textColor="@color/colorWhite"
+                            android:textColor="@color/colorBlueLightTheme"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/recovered"
                             app:layout_constraintStart_toStartOf="parent"
@@ -263,9 +263,10 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:background="@drawable/btn_get_started"
+                    android:background="@drawable/btn_get_started_white"
                     android:text="@string/province_website"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlueLightTheme"
+                    app:backgroundTint="@color/colorWhite"
                     app:cornerRadius="8dp"
                     app:layout_constraintEnd_toStartOf="@+id/button3"
                     app:layout_constraintStart_toStartOf="parent"
@@ -278,9 +279,10 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
-                    android:background="@drawable/btn_get_started"
+                    android:background="@drawable/btn_get_started_white"
                     android:text="@string/graph_global"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlueLightTheme"
+                    app:backgroundTint="@color/colorWhite"
                     app:cornerRadius="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/button2"
