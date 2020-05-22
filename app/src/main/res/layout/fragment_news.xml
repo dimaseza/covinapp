@@ -70,7 +70,7 @@
                     android:layout_marginTop="50dp"
                     android:fontFamily="@font/roboto"
                     android:text="@string/news_today"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="?attr/colorSecondary"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/rv_top_news" />
 

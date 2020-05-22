@@ -7,12 +7,12 @@
     <color name="primaryDarkColor">#0F4C75</color>
     <color name="accentColor">#BBE1FA</color>
     <color name="primaryColor">#3282B8</color>
-    <color name="colorBlack">#1B262C</color>
-    <color name="colorWhite">#FFF</color>
+    <color name="colorOnPrimary">#1B262C</color>
+    <color name="colorOnSecondary">#FFF</color>
     <color name="fontColor">#0F4C75</color>
     <color name="backgroundCase">#2C3C44</color>
     <color name="fontGreen">#00EA09</color>
     <color name="fontRed">#CE0101</color>
-    <color name="colorBlueLightTheme">#0F2D75</color>
+    <color name="colorSecondary">#0F2D75</color>
 
 </resources>
