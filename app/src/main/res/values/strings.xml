@@ -2,10 +2,10 @@
     <string name="app_name">Covin App</string>
     <string name="already_app">Get Started</string>
     <string name="corona_virus_information">Corona Virus Information</string>
-    <string name="caption_greetings">Welcome t COVIN, COVIN is an application\nthat can we use to search information about-*\nSARS-Cov-2 or Covid-19. In this application you can\nsearch information about nearby hospital, number of cases\n, and news about Covid-19\n especially in Indonesia</string>
+    <string name="caption_greetings">Welcome to COVIN, COVIN is an application\nthat can we use to search information about-*\nSARS-Cov-2 or Covid-19. In this application you can\nsearch information about nearby hospital, number of cases\n, and news about Covid-19\n especially in Indonesia</string>
     <string name="title_home">Home</string>
     <string name="title_news">News</string>
-    <string name="province_website">Web Provence</string>
+    <string name="province_website">Web Province</string>
     <string name="confirmed_case">Confirmed</string>
     <string name="recovered_case">Recovered</string>
     <string name="deaths_case">Deaths</string>
