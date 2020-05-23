@@ -19,4 +19,7 @@
     <string name="title_news_long">Hari ini adalah hari dimana orang - orang pergi ke McDonald Sarinah, Jakarta Pusat, Indonesia</string>
     <string name="title_map">Maps</string>
     <string name="mulai_aplikasi">MULAI APLIKASI</string>
+    <string name="greetings_text">Selamat Siang, semoga sehat selalu</string>
+    <string name="Location">Indonesia</string>
+    <string name="Source">Sumber dari kawalcorona.co.id</string>
 </resources>

@@ -51,7 +51,7 @@
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/btn_get_started"
                     android:fontFamily="@font/roboto"
-                    android:text="Selamat Siang, semoga sehat selalu *template"
+                    android:text="@string/greetings_text"
                     android:textAlignment="center"
                     android:textColor="@color/fontColor"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +93,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:drawableEnd="@drawable/ic_expand_more"
-                                    android:text="Indonesia"
+                                    android:text="@string/Location"
                                     android:textColor="?attr/colorSecondary" />
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
@@ -250,7 +250,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto"
-                    android:text="Sumber: blabla.id"
+                    android:text="@string/Source"
                     android:textColor="@color/colorOnPrimary"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
