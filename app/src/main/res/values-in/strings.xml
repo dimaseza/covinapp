@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Covin App</string>
+    <string name="already_app">Mulai Aplikasi</string>
+    <string name="corona_virus_information">Corona Virus Information</string>
+    <string name="caption_greetings">Selamat datang di COVIN, COVIN adalah aplikasi yang\nbisa anda gunakan untuk mencari informasi seputar\nSars-Cov 2 atau Covid19. Pada aplikasi ini anda bisa\nmencari informasi seputar rumah sakit terdekat, angka\nterkonfirmasi, hingga berita terkini seputar Covid19\nkhususnya di Indonesia</string>
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="province_website">Web Provinsi</string>
+    <string name="confirmed_case">Confirmed</string>
+    <string name="recovered_case">Recovered</string>
+    <string name="deaths_case">Deaths</string>
+    <string name="graph_global">Grafik Global</string>
+    <string name="news_today">Berita Hari Ini</string>
+    <string name="more">Lebih Banyak</string>
+    <string name="back">Kembali</string>
+    <string name="before">Sebelumnya</string>
+    <string name="next">Selanjutnya</string>
+    <string name="title_news_long">Hari ini adalah hari dimana orang - orang pergi ke McDonald Sarinah, Jakarta Pusat, Indonesia</string>
+    <string name="title_map">Maps</string>
+    <string name="mulai_aplikasi">MULAI APLIKASI</string>
+</resources>
